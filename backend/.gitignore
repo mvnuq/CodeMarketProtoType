@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Entorno virtual
+env/
+.venv/
+venv/
+
+# Archivos de configuración/IDE
+*.log
+*.sqlite3
+*.env
+*.DS_Store
+*.swp
+*.swo
+*.idea/
+*.vscode/
+
+# Django
+db.sqlite3
+/staticfiles/
+/media/
+/__pycache__/
+/local_settings.py
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.cache
+
+# Test results
+junit-*.xml
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+
+# Other
+.env
+.env.*
+
+# Replit
+.replit
