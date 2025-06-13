@@ -1,0 +1,19 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+}
+
+.logo {
+  height: 40px;
+}
+
+.search-bar {
+  max-width: 300px;
+  background: #001529;
+  border: 1px solid #2c3e50;
+  color: white;
+  border-radius: 20px;
+}
