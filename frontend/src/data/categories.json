@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Sistema de gestión",
+    "items": [
+      { "id": 1, "name": "GestionPy", "icon": "/assets/erp.png" },
+      { "id": 2, "name": "AdminPro",  "icon": "/assets/erp.png" }
+    ]
+  },
+  {
+    "title": "Sistemas ERP",
+    "items": [
+      { "id": 3, "name": "ERPCloud", "icon": "/assets/erp.png" },
+      { "id": 4, "name": "MicroERP",  "icon": "/assets/erp.png" }
+    ]
+  },
+  {
+    "title": "Innovación",
+    "items": [
+      { "id": 5, "name": "InnovaX",   "icon": "/assets/innov.png" },
+      { "id": 6, "name": "SmartSuite","icon": "/assets/innov.png" }
+    ]
+  }
+]

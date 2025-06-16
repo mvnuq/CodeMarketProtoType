@@ -1,0 +1,46 @@
+/* src/components/CategorySection.css */
+.cm-cat {
+  /* Quitamos el max-width para que la sección ocupe todo el ancho disponible */
+  width: 100%;
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+
+.cm-cat h2 {
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.cm-cat-grid {
+  display: grid;
+  /* Ahora intentamos llenar con tarjetas de al menos 220px de ancho */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.cm-cat-item {
+  background: var(--purple);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.cm-cat-item:hover {
+  background: var(--purple-light);
+  transform: translateY(-4px);
+}
+
+.cm-cat-item img {
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cm-cat-item span {
+  display: block;
+  color: var(--text-light);
+  font-weight: 500;
+}

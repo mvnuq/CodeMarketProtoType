@@ -1,0 +1,22 @@
+.cm-footer {
+  background: #1D1464;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+.cm-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-lighter);
+  font-size: 0.9rem;
+}
+.cm-footer-inner nav a {
+  margin-left: 1rem;
+  color: var(--text-lighter);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.cm-footer-inner nav a:hover {
+  color: var(--text-light);
+}

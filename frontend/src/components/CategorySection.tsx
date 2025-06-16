@@ -1,37 +1,38 @@
-import { Card, Typography, Row, Col } from 'antd'
+// src/components/CategorySection.tsx
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import './CategorySection.css';
 
-const { Title } = Typography
+export type CatItem = { id: number; name: string; icon: string };
+export type CatSection = { title: string; items: CatItem[] };
 
-type Props = {
-  title: string
-  items: { id: number; name: string; image: string }[]
-}
+type Props = { section: CatSection };
 
-const CategorySection = ({ title, items }: Props) => {
+export default function CategorySection({ section }: Props) {
+  const navigate = useNavigate();
+
+  const goDetail = (item: CatItem) => {
+    navigate(`/software/${item.id}`, { state: { item } });
+  };
+
   return (
-    <div style={{ marginBottom: 60 }}>
-      <Title level={3} style={{ color: '#fff' }}>{title}</Title>
-      <Row gutter={[16, 16]}>
-        {items.map(item => (
-          <Col xs={12} sm={8} md={6} lg={4} key={item.id}>
-            <Card
-              hoverable
-              cover={<img alt={item.name} src={item.image} style={{ height: 140, objectFit: 'cover' }} />}
-              style={{
-                borderRadius: 12,
-                overflow: 'hidden',
-                background: '#1e1b4b',
-                color: '#fff',
-                border: '1px solid #333',
-              }}
-            >
-              <Card.Meta title={item.name} />
-            </Card>
-          </Col>
+    <section className="cm-cat">
+      <h2>{section.title}</h2>
+      <div className="cm-cat-grid">
+        {section.items.map(item => (
+          <motion.div
+            key={item.id}
+            className="cm-cat-item"
+            whileHover={{ y: -5, backgroundColor: '#6A37A1' }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            onClick={() => goDetail(item)}                // <-- aquí
+          >
+            <img src={item.icon} alt={item.name} />
+            <span>{item.name}</span>
+          </motion.div>
         ))}
-      </Row>
-    </div>
-  )
+      </div>
+    </section>
+  );
 }
-
-export default CategorySection
