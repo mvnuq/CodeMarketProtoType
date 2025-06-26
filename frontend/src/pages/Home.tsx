@@ -6,6 +6,7 @@ import CategorySection, { CatSection } from '../components/CategorySection';
 import Footer from '../components/Footer';
 import data from '../data/categories.json';
 import { useNavigate } from 'react-router-dom';
+import ChatBot from '../components/ChatBot';
 
 export default function Home() {
   const navigate = useNavigate();                 // <-- hook
@@ -86,7 +87,7 @@ export default function Home() {
           ))}
         </div>
       </motion.section> */}
-
+      <ChatBot />
       <Footer />
     </div>
   );

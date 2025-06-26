@@ -68,3 +68,39 @@
 .continue-btn:not(:disabled):hover {
   transform: scale(1.03);
 }
+
+
+
+/* Agrupa cada bloque de pregunta */
+.question-block {
+  border: none;
+  margin: 2rem 0;
+}
+.question-block legend {
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Botón de WhatsApp fijo en la esquina inferior derecha */
+.whatsapp-agent {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #25D366;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 20;
+  transition: transform 0.2s;
+}
+.whatsapp-agent:hover {
+  transform: translateY(-3px);
+}
