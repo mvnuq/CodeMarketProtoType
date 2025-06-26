@@ -1,58 +1,101 @@
-.modern-home {
-  padding: 2rem;
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  min-height: 100vh;
-  color: #fff;
+/* Variables y fuentes */
+:root {
+  --bg-start: #0f2027;
+  --bg-mid:   #203a43;
+  --bg-end:   #2c5364;
+  --accent-1: #40a9ff;
+  --accent-2: #70e1f5;
+  --text-main: #ffffff;
+  --font-title: 'Poppins', sans-serif;
+  --font-body:  'Inter', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
+
+.modern-home {
+  padding: 2rem;
+  background: linear-gradient(to bottom, var(--bg-start), var(--bg-mid), var(--bg-end));
+  min-height: 100vh;
+  color: var(--text-main);
+  font-family: var(--font-body);
+}
+
+/* Hero con fondo fijo para parallax */
 .header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  padding: 4rem 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 
 .animated-title {
-  font-size: 3.2rem;
+  font-family: var(--font-title);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
-  background: linear-gradient(90deg, #40a9ff, #70e1f5);
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glow 3s ease-in-out infinite alternate;
+  margin-bottom: 1rem;
 }
 
 @keyframes glow {
-  0% {
-    text-shadow: 0 0 5px #40a9ff, 0 0 10px #40a9ff;
-  }
-  100% {
-    text-shadow: 0 0 20px #70e1f5, 0 0 30px #70e1f5;
-  }
+  0% { text-shadow: 0 0 5px var(--accent-1), 0 0 10px var(--accent-1); }
+  100% { text-shadow: 0 0 20px var(--accent-2), 0 0 30px var(--accent-2); }
 }
 
+/* Grid responsivo */
 .software-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Glassmorphism + degradado en borde */
 .card {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1rem;
-  border-radius: 10px;
-  width: 300px;
+  position: relative;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  background-image:
+    linear-gradient(var(--bg-start), var(--bg-end)),
+    linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-align: center;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.3);
 }
 
 .card img {
   width: 80px;
   height: 80px;
   margin-bottom: 1rem;
+}
+
+/* Botón de acción */
+.btn-discover {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-discover:hover {
+  opacity: 0.85;
 }

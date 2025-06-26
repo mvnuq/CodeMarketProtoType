@@ -1,0 +1,52 @@
+.detail-page {
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .detail-content {
+    max-width: 600px;
+    margin: 4rem auto;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 2px solid rgba(255,255,255,0.1);
+  }
+  
+  .detail-content img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .detail-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-back {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: linear-gradient(135deg, #40a9ff, #70e1f5);
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  
+  .btn-back:hover {
+    opacity: 0.85;
+  }
+  

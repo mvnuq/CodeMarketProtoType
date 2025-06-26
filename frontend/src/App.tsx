@@ -1,20 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { AuthProvider } from './auth/AuthProvider'
-import Login from './pages/Login'
+import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
+import SoftwareDetail from './pages/SoftwareDetail'
 
-function App() {
-  return (
-    <BrowserRouter>
-      <AuthProvider>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-
-        </Routes>
-      </AuthProvider>
-    </BrowserRouter>
-  )
-}
+const App: React.FC = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Navigate to="/home" replace />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/software/:slug" element={<SoftwareDetail />} />
+      {/* ruta fallback */}
+      <Route path="*" element={<Navigate to="/home" replace />} />
+    </Routes>
+  </BrowserRouter>
+)
 
 export default App
