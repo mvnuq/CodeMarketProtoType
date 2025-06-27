@@ -1,0 +1,70 @@
+/* Setup.css */
+
+.setup-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.setup-content {
+  flex: 1;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.setup-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.setup-content p {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: var(--text-lighter);
+}
+
+.options-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.opt-btn {
+  background: var(--purple);
+  color: var(--text-light);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.opt-btn.selected {
+  background: var(--gradient-btn);
+  color: var(--bg-dark);
+  transform: translateY(-2px);
+}
+.opt-btn:hover {
+  background: var(--purple-light);
+}
+
+.continue-btn {
+  background: var(--gradient-btn);
+  color: var(--bg-dark);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+.continue-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.continue-btn:not(:disabled):hover {
+  transform: scale(1.03);
+}

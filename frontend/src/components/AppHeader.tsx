@@ -1,19 +1,17 @@
-import React from 'react'
-import { Input } from 'antd'
-import { SearchOutlined } from '@ant-design/icons'
-import './AppHeader.css'
+import React from 'react';
+import './AppHeader.css';
 
-const AppHeader: React.FC = () => {
+export default function AppHeader() {
   return (
-    <div className="top-nav">
-      <img src="/assets/logo-codemarket.png" alt="CodeMarket" className="logo" />
-      <Input
-        className="search-bar"
-        placeholder="Buscar software..."
-        prefix={<SearchOutlined />}
-      />
-    </div>
-  )
+    <header className="cm-header">
+      <div className="cm-header-inner">
+        <img src="/assets/logo-codemarket.png" alt="CodeMarket" className="cm-logo" />
+        <div className="cm-search">
+          <input type="text" placeholder="Busca tu software..." />
+          <button>🔍</button>
+        </div>
+        <button className="cm-user">👤</button>
+      </div>
+    </header>
+  );
 }
-
-export default AppHeader

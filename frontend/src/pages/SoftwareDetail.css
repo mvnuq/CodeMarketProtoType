@@ -1,52 +1,205 @@
 .detail-page {
-    min-height: 100vh;
-    padding: 2rem;
-    background: linear-gradient(to bottom, #203a43, #2c5364);
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-dark);
+}
+
+/* Header sticky por encima */
+.cm-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.detail-content {
+  flex: 1;
+  /* ocupa todo el ancho menos 2rem padding */
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Botón volver */
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--text-lighter);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.back-btn:hover {
+  color: var(--text-light);
+}
+
+/* Card principal */
+.detail-card {
+  width: 100%;
+  background: var(--purple);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Título y etiqueta */
+.detail-header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--text-light);
+}
+.detail-label {
+  background: var(--text-lighter);
+  color: var(--bg-dark);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Subtítulo "Descripción" */
+.detail-subtitle {
+  grid-column: 1 / -1;
+  margin: 1rem 0 0.5rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Párrafo descripción */
+.detail-desc {
+  grid-column: 1 / -1;
+  color: var(--text-lighter);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Iconos alineados en columna 1 */
+.detail-icons {
+  grid-column: 1;
+  display: flex;
+  gap: 1rem;
+}
+.detail-icons img {
+  width: 2.5rem;
+}
+
+/* Ilustración en columna 2 */
+.detail-illu {
+  grid-column: 2;
+  justify-self: end;
+  width: 120px;
+  height: 120px;
+}
+.detail-illu img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Sección Planes */
+.detail-plans {
+  width: 100%;
+}
+.detail-plans h2 {
+  margin: 0 0 1rem;
+  color: var(--text-light);
+  font-size: 1.5rem;
+}
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1rem;
+}
+.plan-card {
+  background: var(--purple-light);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+.plan-card:hover {
+  transform: translateY(-4px);
+  background: var(--purple);
+}
+.plan-price {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.plan-desc {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* ...existing rules above... */
+
+/* Contenedor de extras: grid adaptivo */
+.detail-extra {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  /* 2 columnas para demo/reviews, y calendario full width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Cada sección extra comparte este estilo */
+.extra-section {
+  background: var(--purple);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título de sección */
+.extra-section h2 {
+  margin: 0 0 1rem;
+  color: var(--text-light);
+  font-size: 1.25rem;
+}
+
+/* Demo */
+.demo .demo-content {
+  flex: 1;
+}
+.demo-link {
+  color: var(--text-light);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-light);
+  align-self: start;
+}
+
+/* Reseñas */
+.reviews .reviews-content {
+  flex: 1;
+  color: var(--text-lighter);
+}
+
+/* Calendario: forzar full-width en grid de 1 columna menor */
+.calendar {
+  grid-column: 1 / -1;
+}
+.calendar-content {
+  flex: 1;
+  color: var(--text-lighter);
+}
+
+/* Ajustes responsive */
+@media (max-width: 600px) {
+  .detail-extra {
+    grid-template-columns: 1fr;
   }
-  
-  .detail-content {
-    max-width: 600px;
-    margin: 4rem auto;
-    text-align: center;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(6px);
-    border-radius: 1rem;
-    padding: 2rem;
-    border: 2px solid rgba(255,255,255,0.1);
-  }
-  
-  .detail-content img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1.5rem;
-  }
-  
-  .detail-content h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .detail-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-  
-  .btn-back {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 0.6rem;
-    background: linear-gradient(135deg, #40a9ff, #70e1f5);
-    color: #fff;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-  }
-  
-  .btn-back:hover {
-    opacity: 0.85;
-  }
-  
+}
+

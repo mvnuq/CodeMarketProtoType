@@ -55,3 +55,6 @@ junit-*.xml
 
 # Replit
 .replit
+
+.package-lock.json
+package.json

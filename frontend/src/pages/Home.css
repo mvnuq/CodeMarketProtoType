@@ -1,85 +1,104 @@
-/* Variables y fuentes */
-:root {
-  --bg-start: #0f2027;
-  --bg-mid:   #203a43;
-  --bg-end:   #2c5364;
-  --accent-1: #40a9ff;
-  --accent-2: #70e1f5;
-  --text-main: #ffffff;
-  --font-title: 'Poppins', sans-serif;
-  --font-body:  'Inter', sans-serif;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
-
-.modern-home {
-  padding: 2rem;
-  background: linear-gradient(to bottom, var(--bg-start), var(--bg-mid), var(--bg-end));
+.home-page {
   min-height: 100vh;
-  color: var(--text-main);
-  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
 }
 
-/* Hero con fondo fijo para parallax */
-.header {
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #352E8C 0%, #201B4F 100%);
+  padding: 4rem 1rem;
   text-align: center;
-  margin-bottom: 3rem;
-  padding: 4rem 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center 0;
 }
-
-.animated-title {
-  font-family: var(--font-title);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: glow 3s ease-in-out infinite alternate;
-  margin-bottom: 1rem;
-}
-
-@keyframes glow {
-  0% { text-shadow: 0 0 5px var(--accent-1), 0 0 10px var(--accent-1); }
-  100% { text-shadow: 0 0 20px var(--accent-2), 0 0 30px var(--accent-2); }
-}
-
-/* Grid responsivo */
-.software-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+.hero-inner {
+  max-width: 800px;
   margin: 0 auto;
 }
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.1;
+  color: var(--text-light);
+}
+.hero-title span { color: var(--purple-light); }
+.hero-cta {
+  margin-top: 2rem;
+  padding: 0.8rem 2.5rem;
+  border: none; border-radius: 999px;
+  background: var(--gradient-btn);
+  color: var(--bg-dark);
+  font-size: 1.1rem; font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: box-shadow 0.2s;
+}
+.hero-cta:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
 
-/* Glassmorphism + degradado en borde */
-.card {
-  position: relative;
-  padding: 2rem 1.5rem;
+/* Proyecto */
+.home-project {
+  max-width: 1200px;
+  margin: 3rem auto 1rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+}
+.project-card {
+  background: var(--purple-light);
+  background-image: radial-gradient(circle at top left, #6A37A1 0%, #5E2E8C 100%);
   border-radius: 1rem;
-  backdrop-filter: blur(8px);
-  background-image:
-    linear-gradient(var(--bg-start), var(--bg-end)),
-    linear-gradient(135deg, var(--accent-1), var(--accent-2));
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  border: 2px solid transparent;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.label {
+  background: var(--text-lighter);
+  color: var(--bg-dark);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-desc {
+  grid-column: 1 / -1;
+  color: var(--text-lighter);
+  margin: 1rem 0;
+}
+.project-icons img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Planes */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1rem;
+}
+.plan-card {
+  background: linear-gradient(120deg, #5E2E8C 0%, #6A37A1 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
   text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
 }
-
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+.plan-price {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
-
-.card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
+.plan-desc {
+  font-size: 0.9rem;
 }
 
 /* Botón de acción */

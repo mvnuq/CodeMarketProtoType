@@ -1,73 +1,93 @@
-// src/pages/Home.tsx
+import React from 'react';
+import { motion } from 'framer-motion';
+import './Home.css';
+import AppHeader from '../components/AppHeader';
+import CategorySection, { CatSection } from '../components/CategorySection';
+import Footer from '../components/Footer';
+import data from '../data/categories.json';
+import { useNavigate } from 'react-router-dom';
 
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import AppHeader from '../components/AppHeader'
-import './Home.css'
+export default function Home() {
+  const navigate = useNavigate();                 // <-- hook
 
-const Home: React.FC = () => {
-  const navigate = useNavigate()
-
-  // Parallax sutil en el header
-  useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY / 4
-      const headerEl = document.querySelector('.header') as HTMLElement
-      if (headerEl) headerEl.style.backgroundPosition = `center ${y}px`
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  const softwareItems = [
-    {
-      img: '/assets/erp.png',
-      title: 'Sistema ERP',
-      desc: 'Optimiza tus procesos empresariales con esta solución innovadora.',
-      link: '/software/erp'
-    },
-    {
-      img: '/assets/erp.png',
-      title: 'Sistema ERP 2',
-      desc: 'Una alternativa eficiente y escalable para negocios medianos.',
-      link: '/software/erp-2'
-    },
-    {
-      img: '/assets/erp.png',
-      title: 'ERP Modular',
-      desc: 'Flexibilidad total para adaptarse al crecimiento de tu empresa.',
-      link: '/software/modular'
-    }
-  ]
-
+  const handleStart = () => {
+    navigate('/setup');
+  };
   return (
-    <div className="modern-home">
+    <div className="home-page">
       <AppHeader />
 
-      <header className="header">
-        <h1 className="animated-title">
-          Encuentra <span>tu software</span>
-        </h1>
-        <p>Soluciones diseñadas para transformar tu negocio digitalmente.</p>
-      </header>
+      {/* Hero */}
+      <section className="hero">
+        <div className="hero-inner">
+          <motion.h1
+            className="hero-title"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            Encuentra<br/>
+            Tu <span>software</span>
+          </motion.h1>
+          <motion.button
+            className="hero-cta"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+             onClick={handleStart}  
+          >
+            No se como comenzar
+          
+          </motion.button>
+        </div>
+      </section>
 
-      <div className="software-grid">
-        {softwareItems.map((item, i) => (
-          <div className="card" key={i}>
-            <img src={item.img} alt={`${item.title} Logo`} />
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-            <button
-              className="btn-discover"
-              onClick={() => navigate(item.link)}
-            >
-              Ver más
-            </button>
+      {/* Categorías */}
+      {(data as CatSection[]).map(sec =>
+        <CategorySection key={sec.title} section={sec} />
+      )}
+
+      {/* Proyecto + Planes
+      <motion.section
+        className="home-project"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden:  { opacity: 0, y: 30 },
+          visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.15 } }
+        }}
+      >
+        <motion.div className="project-card" variants={{ hidden:{opacity:0}, visible:{opacity:1} }}>
+          <div className="project-header">
+            <h2>{project.title}</h2>
+            <span className="label">{project.label}</span>
           </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+          <p className="project-desc">{project.desc}</p>
+          <div className="project-icons">
+            {project.icons.map(i => <img key={i} src={i} alt="" />)}
+          </div>
+        </motion.div>
 
-export default Home
+        <div className="plans">
+          {[1,2,3].map(n => (
+            <motion.div
+              key={n}
+              className="plan-card"
+              variants={{ hidden:{opacity:0}, visible:{opacity:1} }}
+              whileHover={{ y: -4, backgroundColor: '#5E2E8C' }}
+            >
+              <div className="plan-price">
+                Coste mensual<br />9.900 CLP
+              </div>
+              <div className="plan-desc">
+                descripción de qué trae etc…
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section> */}
+
+      <Footer />
+    </div>
+  );
+}

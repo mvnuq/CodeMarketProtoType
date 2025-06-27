@@ -1,18 +1,25 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Home from './pages/Home'
-import SoftwareDetail from './pages/SoftwareDetail'
+import React from 'react';
+import { useLocation, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { AuthProvider }   from './auth/AuthProvider';
+import Login              from './pages/Login';
+import Home               from './pages/Home';
+import Setup              from './pages/Setup';
+import SoftwareDetail     from './pages/SoftwareDetail';
 
-const App: React.FC = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Navigate to="/home" replace />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/software/:slug" element={<SoftwareDetail />} />
-      {/* ruta fallback */}
-      <Route path="*" element={<Navigate to="/home" replace />} />
-    </Routes>
-  </BrowserRouter>
-)
+export default function App() {
+  const location = useLocation();
 
-export default App
+  return (
+    <AuthProvider>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/"           element={<Login />} />
+          <Route path="/home"       element={<Home />} />
+          <Route path="/setup"      element={<Setup />} />
+          <Route path="/software/:id" element={<SoftwareDetail />} />
+        </Routes>
+      </AnimatePresence>
+    </AuthProvider>
+  );
+}
