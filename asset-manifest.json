@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CodeMarketProtoType/static/css/main.7bb7689b.css",
-    "main.js": "/CodeMarketProtoType/static/js/main.dcc90957.js",
+    "main.css": "/CodeMarketProtoType/static/css/main.361d4b7e.css",
+    "main.js": "/CodeMarketProtoType/static/js/main.578b1e60.js",
     "index.html": "/CodeMarketProtoType/index.html",
-    "main.7bb7689b.css.map": "/CodeMarketProtoType/static/css/main.7bb7689b.css.map",
-    "main.dcc90957.js.map": "/CodeMarketProtoType/static/js/main.dcc90957.js.map"
+    "main.361d4b7e.css.map": "/CodeMarketProtoType/static/css/main.361d4b7e.css.map",
+    "main.578b1e60.js.map": "/CodeMarketProtoType/static/js/main.578b1e60.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bb7689b.css",
-    "static/js/main.dcc90957.js"
+    "static/css/main.361d4b7e.css",
+    "static/js/main.578b1e60.js"
   ]
 }
