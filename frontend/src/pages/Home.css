@@ -100,3 +100,57 @@
 .plan-desc {
   font-size: 0.9rem;
 }
+
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.home-title .highlight {
+  color: #9f5ae0;
+}
+
+.home-choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.choice-card {
+  background: #5e23a4;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.choice-card h2 {
+  color: #e5d9f2;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg,#ffc34e,#ff5a5f);
+  border: none;
+  color: #1a0b36;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.btn-primary:hover {
+  filter: brightness(1.1);
+}

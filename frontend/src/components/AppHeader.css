@@ -1,55 +1,103 @@
+:root {
+  --header-bg: rgba(29,20,100,0.75);
+  --header-shadow: rgba(0, 0, 0, 0.2);
+  --search-bg: #6d3bcf;
+  --search-bg-focus: #5e23a4;
+  --accent: #9f5ae0;
+  --text-light: #f1effb;
+}
+
 .cm-header {
   position: sticky;
   top: 0;
-  background: rgba(29,20,100,0.85);
-  backdrop-filter: blur(8px);
-  padding: 0.5rem 0;
-  z-index: 10;
+  width: 100%;
+  background: var(--header-bg);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 8px var(--header-shadow);
+  z-index: 50;
 }
+
 .cm-header-inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
+
 .cm-logo {
   height: 2.5rem;
   filter: brightness(0) invert(1);
 }
+
+/* Search bar */
 .cm-search {
   flex: 1;
-  margin: 0 1rem;
   position: relative;
 }
+
 .cm-search input {
   width: 100%;
   padding: 0.6rem 3rem 0.6rem 1rem;
-  border-radius: 999px;
+  border-radius: 0.75rem;
   border: none;
-  background: var(--purple-light);
+  background: var(--search-bg);
   color: var(--text-light);
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
-.cm-search input:hover,
+
+.cm-search input::placeholder {
+  color: rgba(241, 239, 251, 0.6);
+}
+
 .cm-search input:focus {
-  box-shadow: 0 0 8px var(--purple-light);
-  background: var(--purple);
+  background: var(--search-bg-focus);
+  box-shadow: 0 0 0 3px var(--accent);
   outline: none;
 }
+
 .cm-search button {
   position: absolute;
-  right: 1rem; top: 50%;
+  top: 50%;
+  right: 0.75rem;
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: var(--text-light);
-  font-size: 1.2rem;
+  padding: 0;
   cursor: pointer;
 }
+
+.cm-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+}
+
+.cm-icon--search:hover {
+  filter: brightness(1.2);
+}
+
+/* User avatar button */
 .cm-user {
-  font-size: 1.5rem;
-  background: none;
+  background: var(--search-bg);
   border: none;
-  color: var(--text-light);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cm-user:hover {
+  background: var(--search-bg-focus);
+  transform: scale(1.05);
+}
+
+.cm-icon--user {
+  width: 1.4rem;
+  height: 1.4rem;
 }

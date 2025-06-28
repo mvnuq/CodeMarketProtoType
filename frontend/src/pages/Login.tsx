@@ -1,37 +1,69 @@
-import { Form, Input, Button, Typography, notification } from 'antd'
-import { UserOutlined, LockOutlined } from '@ant-design/icons'
-import { useAuth } from '../auth/useAuth'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
-const { Title } = Typography
+export default function Login() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [pass, setPass] = useState('');
+  const [showPass, setShowPass] = useState(false);
+  const [error, setError] = useState('');
 
-const Login = () => {
-  const { login } = useAuth()
-
-  const onFinish = async (values: any) => {
-    try {
-      await login(values.email, values.password)
-      notification.success({ message: 'Logged in successfully' })
-    } catch {
-      notification.error({ message: 'Login failed', description: 'Invalid credentials' })
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !pass) {
+      setError('Por favor completa ambos campos');
+      return;
     }
-  }
+    setError('');
+    navigate('/home');
+  };
 
   return (
-    <div style={{ maxWidth: 400, margin: '100px auto' }}>
-      <Title level={2}>Login to CodeMarket</Title>
-      <Form name="login" onFinish={onFinish}>
-        <Form.Item name="email" rules={[{ required: true, message: 'Enter your email' }]}>
-          <Input prefix={<UserOutlined />} placeholder="Email" />
-        </Form.Item>
-        <Form.Item name="password" rules={[{ required: true, message: 'Enter your password' }]}>
-          <Input.Password prefix={<LockOutlined />} placeholder="Password" />
-        </Form.Item>
-        <Form.Item>
-          <Button type="primary" htmlType="submit" block>Log In</Button>
-        </Form.Item>
-      </Form>
-    </div>
-  )
-}
+    <div className="login-page">
+      <form className="login-card" onSubmit={handleSubmit} noValidate>
+        <h2 className="login-title">Inicia sesión en CodeMarket</h2>
+        {error && <p className="login-error">{error}</p>}
 
-export default Login
+        <label className="login-label">
+          <span>Correo electrónico</span>
+          <div className="login-input-wrap">
+            <span className="login-icon">👤</span>
+            <input
+              type="email"
+              className="login-input"
+              placeholder="usuario@dominio.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+            />
+          </div>
+        </label>
+
+        <label className="login-label">
+          <span>Contraseña</span>
+          <div className="login-input-wrap">
+            <span className="login-icon">🔒</span>
+            <input
+              type={showPass ? 'text' : 'password'}
+              className="login-input"
+              placeholder="••••••••"
+              value={pass}
+              onChange={e => setPass(e.target.value)}
+            />
+            <button
+              type="button"
+              className="login-eye-btn"
+              onClick={() => setShowPass(v => !v)}
+            >
+              {showPass ? '🙈' : '👁️'}
+            </button>
+          </div>
+        </label>
+
+        <button type="submit" className="login-btn">
+          Iniciar sesión
+        </button>
+      </form>
+    </div>
+  );
+}

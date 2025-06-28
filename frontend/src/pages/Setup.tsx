@@ -78,6 +78,7 @@ export default function Setup() {
     // aquí vas a procesar todas las respuestas
     // console.log({ stage, softTypes: [...softTypes], barriers: [...barriers], needs: [...needs] });
     // p.ej navigate('/questions', { state: { stage, softTypes, barriers, needs }})
+    navigate('/suggestions-software');
   };
 
   // Mostrar WhatsApp en cuanto respondan la primera pregunta

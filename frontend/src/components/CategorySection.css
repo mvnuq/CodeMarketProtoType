@@ -1,122 +1,62 @@
-/* Tarjeta padre y contenido */
-.cm-cat-item,
-.normal-content,
-.hover-overlay {
-  width: 100%;
-  box-sizing: border-box;
+.category-section {
+  padding: 2rem;
+  background-color: #0b0e3b;
 }
 
-.cm-cat-item {
-  position: relative;
+.category-section h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Responsive horizontal grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.software-card {
+  background-color: #1e2030;
+  border-radius: 0.5rem;
   overflow: hidden;
-  border-radius: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s;
-  width: 100%; /* Así ocupa el espacio del grid */
-  aspect-ratio: 5/4; /* O usa 4/3 si quieres más cuadradas */
-  background: #181c23;
   display: flex;
   flex-direction: column;
-    max-width: 400px;
-  min-width: 220px;
-}
-.cm-cat-item:hover {
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-/* — Estado normal (gradient + icono) — */
-.normal-content {
-  background: linear-gradient(135deg, #5E2E8C 0%, #6A37A1 100%);
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: opacity 0.1s ease;
-}
-
-/* Icono */
-.cat-icon-wrapper {
-  background: rgba(255,255,255,0.1);
-  padding: 0.4rem;
-  border-radius: 50%;
-  margin-bottom: 0.4rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
-.cat-icon-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Nombre */
-.cat-name {
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-  line-height: 1;
-}
-
-/* — Estado hover (card-side) — */
-.hover-overlay {
-  position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0; */
-  display: flex;
-  align-items: center;
-  background: #2b2d35;
-  padding: 0 0.5rem;
-  opacity: 0;
-  transition: opacity 0.1s ease;
-  color: #fff;
-}
-.cm-cat-item:hover .normal-content {
-  opacity: 0;
-}
-.cm-cat-item:hover .hover-overlay {
-  opacity: 1;
-}
-
-/* Imagen en overlay */
-.hover-img {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  overflow: hidden;
-  border-radius: 0.25rem;
-  margin-right: 0.5rem;
-}
-.hover-img img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
+  color: white;
 }
 
-/* Contenido del overlay */
-.hover-content {
+.software-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.software-image {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  background: #2d2f40;
+  padding: 1rem;
+}
+
+.software-info {
+  padding: 1rem;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
-.hover-content h3 {
-  margin: 0;
-  font-size: 0.875rem;
+
+.software-title {
+  font-size: 1rem;
   font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
 }
-.hover-desc {
-  margin-top: 0.2rem;
-  font-size: 0.7rem;
+
+.software-desc {
+  font-size: 0.85rem;
   color: #ccc;
-  line-height: 1;
-  max-width: calc(100% - 48px - 1rem);
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

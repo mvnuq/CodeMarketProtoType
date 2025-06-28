@@ -1,0 +1,133 @@
+:root {
+  --bg-top: #1a0b36;
+  --bg-bottom: #2e1a6b;
+  --card-bg: rgba(255,255,255,0.05);
+  --input-bg: rgba(255,255,255,0.15);
+  --input-focus: rgba(159,90,224,0.4);
+  --accent: #9f5ae0;
+  --text-light: #f1effb;
+  --text-muted: #c4b2dc;
+  --error: #f56262;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-top), var(--bg-bottom));
+  padding: 1rem;
+}
+
+.login-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  color: var(--text-light);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.login-error {
+  color: var(--error);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-label span {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.login-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--input-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.login-input-wrap:focus-within {
+  box-shadow: 0 0 0 3px var(--input-focus);
+}
+
+.login-icon {
+  margin: 0 0.75rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.login-input {
+  flex: 1;
+  border: none;
+  padding: 0.6rem 0.75rem;
+  background: transparent;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.login-input::placeholder {
+  color: var(--text-muted);
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.login-eye-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  padding: 0 0.75rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 0.5rem;
+  color: #1a0b36;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background: #8c47cc;
+  transform: translateY(-1px);
+}
+.login-btn:active {
+  transform: translateY(0);
+}

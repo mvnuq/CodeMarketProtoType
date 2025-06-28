@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "label": "Retail / Comercio",
+    "issues": [
+      "Gestión de inventarios en tiempo real",
+      "Omnicanalidad y sincronización de stock",
+      "Análisis de ventas por canal"
+    ]
+  },
+  {
+    "id": 2,
+    "label": "Manufactura / Producción",
+    "issues": [
+      "Control de procesos y trazabilidad",
+      "Mantenimiento predictivo de maquinaria",
+      "Optimización de la cadena de suministro"
+    ]
+  },
+  {
+    "id": 3,
+    "label": "Finanzas / Fintech",
+    "issues": [
+      "Automatización de conciliaciones bancarias",
+      "Cumplimiento normativo (KYC, AML)",
+      "Seguridad en transacciones en línea"
+    ]
+  },
+  {
+    "id": 4,
+    "label": "Educación / Edtech",
+    "issues": [
+      "Plataforma de e-learning escalable",
+      "Seguimiento de desempeño de estudiantes",
+      "Integración con sistemas académicos existentes"
+    ]
+  },
+  {
+    "id": 5,
+    "label": "Salud / e-salud",
+    "issues": [
+      "Historial médico electrónico seguro",
+      "Telemedicina y consultas en línea",
+      "Cumplimiento de normativas de privacidad (HIPAA, GDPR)"
+    ]
+  },
+  {
+    "id": 6,
+    "label": "Logística / Transporte",
+    "issues": [
+      "Ruteo y planificación de flotas",
+      "Monitoreo en tiempo real de entregas",
+      "Gestión de almacenes y cross-docking"
+    ]
+  },
+  {
+    "id": 7,
+    "label": "Gobierno / Sector público",
+    "issues": [
+      "Digitalización de trámites ciudadanos",
+      "Transparencia y acceso a datos públicos",
+      "Seguridad y auditoría de sistemas"
+    ]
+  },
+  {
+    "id": 8,
+    "label": "Agricultura / Agro",
+    "issues": [
+      "Monitoreo de cultivos y sensores IoT",
+      "Gestión de riego y fertilización inteligente",
+      "Trazabilidad de productos agrícolas"
+    ]
+  },
+  {
+    "id": 9,
+    "label": "Servicios profesionales",
+    "issues": [
+      "Gestión de proyectos y facturación",
+      "Colaboración con clientes en línea",
+      "Automatización de contratos y firmas"
+    ]
+  },
+  {
+    "id": 10,
+    "label": "Otros sectores",
+    "issues": [
+      "Problemas variados según la industria",
+      "Necesidades de digitalización específicas",
+      "Buscar soluciones a medida"
+    ]
+  }
+]
