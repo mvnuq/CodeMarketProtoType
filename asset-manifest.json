@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CodeMarketProtoType/static/css/main.7bb7689b.css",
+    "main.js": "/CodeMarketProtoType/static/js/main.dcc90957.js",
+    "index.html": "/CodeMarketProtoType/index.html",
+    "main.7bb7689b.css.map": "/CodeMarketProtoType/static/css/main.7bb7689b.css.map",
+    "main.dcc90957.js.map": "/CodeMarketProtoType/static/js/main.dcc90957.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bb7689b.css",
+    "static/js/main.dcc90957.js"
+  ]
+}
