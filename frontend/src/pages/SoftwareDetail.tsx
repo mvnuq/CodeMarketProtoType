@@ -1,33 +1,29 @@
-// src/pages/SoftwareDetail.tsx
-import React from 'react';
-import { useParams, useLocation, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import AppHeader from '../components/AppHeader';
-import Footer    from '../components/Footer';
+import Footer from '../components/Footer';
 import './SoftwareDetail.css';
 
+// Importamos el JSON (o haz fetch a tu API)
+import data from '../data/software-items.json';
+
+type Plan = { id: number; price: number; description: string };
 type LocationState = {
-  item: {
-    id: number;
-    title: string;
-    label: string;
-    desc: string;
-    icons: string[];
-    illustration: string;
-  };
+  item?: never; // no viene por state, lo buscamos por params
 };
 
 export default function SoftwareDetail() {
-  const { state } = useLocation();
-  const navigate  = useNavigate();
-  const item = (state as LocationState)?.item || {
-    id: 0,
-    title: 'Proyecto genérico',
-    label: 'DevTest SPA',
-    desc: 'El proyecto genérico se basa para el uso de sistema erp adaptado a microempresas',
-    icons: ['/assets/python.png','/assets/react.png','/assets/digitalocean.png'],
-    illustration: '/assets/illustration.png'
-  };
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const [item, setItem] = useState<typeof data[0] | null>(null);
+
+  useEffect(() => {
+    const found = data.find(d => d.id === Number(id));
+    setItem(found ?? null);
+  }, [id]);
+
+  // if (!item) return <p>Cargando o software no encontrado…</p>;
 
   return (
     <div className="detail-page">
@@ -46,17 +42,31 @@ export default function SoftwareDetail() {
 
         {/* CARD PRINCIPAL */}
         <div className="detail-card">
+          {/* Logo */}
+          <div className="detail-logo">
+            <img src={item?.companyLogo} alt={`${item?.title} logo`} />
+          </div>
+
+          {/* Header */}
           <div className="detail-header">
-            <h1>{item.title}</h1>
-            <span className="detail-label">{item.label}</span>
+            <h1>{item?.title}</h1>
+            <span className="detail-label">{item?.label}</span>
           </div>
+
+          {/* Descripción */}
           <h3 className="detail-subtitle">Descripción</h3>
-          <p className="detail-desc">{item.desc}</p>
+          <p className="detail-desc">{item?.desc}</p>
+
+          {/* Íconos */}
           <div className="detail-icons">
-            {item.icons?.map(src => <img key={src} src={src} alt="" />)}
+            {item?.icons.map(src => (
+              <img key={src} src={src} alt="" />
+            ))}
           </div>
+
+          {/* Ilustración */}
           <div className="detail-illu">
-            <img src={item.illustration} alt="Ilustración" />
+            <img src={item?.illustration} alt="Ilustración" />
           </div>
         </div>
 
@@ -64,45 +74,50 @@ export default function SoftwareDetail() {
         <section className="detail-plans">
           <h2>Planes</h2>
           <div className="plans-grid">
-            {[1,2,3].map(n => (
-              <div key={n} className="plan-card">
-                <div className="plan-price">Coste mensual<br/>9.900 CLP</div>
-                <div className="plan-desc">descripción de qué trae etc…</div>
+            {item?.plans.map(plan => (
+              <div key={plan.id} className="plan-card">
+                <div className="plan-price">{plan.price.toLocaleString()} CLP</div>
+                <div className="plan-desc">{plan.description}</div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* NUEVAS SECCIONES */}
+        {/* DEMO | RESEÑAS | CALENDARIO */}
         <div className="detail-extra">
-
-          {/* Demo */}
           <section className="extra-section demo">
             <h2>Demo</h2>
             <div className="demo-content">
-              {/* aquí podrías incrustar un iframe de video o un enlace */}
-              <a href="#" className="demo-link">Link video demo</a>
+              <a
+                href={item?.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="demo-link"
+              >
+                Ver video demo
+              </a>
             </div>
           </section>
 
-          {/* Reseñas */}
           <section className="extra-section reviews">
             <h2>Reseñas</h2>
             <div className="reviews-content">
-              {/* tarjetas o párrafos con reseñas */}
-              <p>Reseñas generales</p>
+              {item?.reviews.map((r, i) => (
+                <p key={i}>"{r}"</p>
+              ))}
             </div>
           </section>
 
-          {/* Calendario */}
           <section className="extra-section calendar">
             <h2>Calendario</h2>
             <div className="calendar-content">
-              {/* por ej: <iframe src="https://calendar.google.com/..." /> */}
-              <p>Calendario de Google</p>
+              <iframe
+                src={item?.calendarUrl}
+                style={{ border: 0, width: '100%', height: '250px' }}
+                title="Calendario"
+              />
             </div>
           </section>
-
         </div>
       </motion.main>
 

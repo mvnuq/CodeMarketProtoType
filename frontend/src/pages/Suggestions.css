@@ -1,0 +1,55 @@
+/* Título de la página */
+.suggestions-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+/* Grid de tarjetas */
+.clients-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  margin-top: 1rem;
+}
+
+/* Cada tarjeta de empresa */
+.client-card {
+  background: var(--purple);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: var(--text-light);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+.client-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Icono genérico */
+.client-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Nombre e industria */
+.client-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.client-industry {
+  font-size: 0.95rem;
+  color: var(--text-lighter);
+  margin-bottom: 0.75rem;
+}
+
+/* Lista de problemáticas */
+.client-issues {
+  list-style: disc inside;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Comercial Norte S.A.",
+    "industry": "Retail / Comercio",
+    "issues": [
+      "Sincronización de stock entre tiendas",
+      "Análisis de comportamiento de clientes",
+      "Gestión de devoluciones"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Fábrica Metalúrgica Río",
+    "industry": "Manufactura / Producción",
+    "issues": [
+      "Control de calidad en línea de producción",
+      "Mantenimiento de maquinaria predictivo",
+      "Gestión de órdenes de trabajo"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Finanzas GlobalCorp",
+    "industry": "Finanzas / Fintech",
+    "issues": [
+      "Automatizar conciliaciones bancarias",
+      "Dashboard de riesgos en tiempo real",
+      "Cumplimiento normativo AML"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "EducaTech Instituto",
+    "industry": "Educación / Edtech",
+    "issues": [
+      "Plataforma de cursos online",
+      "Seguimiento de asistencia y desempeño",
+      "Integración con sistemas ERP de la universidad"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Clínica SaludVital",
+    "industry": "Salud / e-salud",
+    "issues": [
+      "Gestionar historiales médicos electrónicos",
+      "Portal de telemedicina seguro",
+      "Recordatorios automáticos de citas"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Transporte Ágil Ltda.",
+    "industry": "Logística / Transporte",
+    "issues": [
+      "Ruteo óptimo de flotas",
+      "Seguimiento GPS en tiempo real",
+      "Gestión de almacenes y cross-dock"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "SmartCity Gobierno",
+    "industry": "Gobierno / Sector público",
+    "issues": [
+      "Portal ciudadano para trámites en línea",
+      "Transparencia de datos abiertos",
+      "Seguridad y auditoría de accesos"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "AgroPlus SA",
+    "industry": "Agricultura / Agro",
+    "issues": [
+      "Monitoreo de cultivos con sensores IoT",
+      "Planificación de riego inteligente",
+      "Trazabilidad de cosechas"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Consultores ProActivos",
+    "industry": "Servicios profesionales",
+    "issues": [
+      "Gestión de proyectos y facturación",
+      "Colaboración con clientes en línea",
+      "Automatizar generación de contratos"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "StartUp Innovex",
+    "industry": "Innovación / I+D",
+    "issues": [
+      "Prototipado rápido de producto",
+      "Gestión de feedback de usuarios",
+      "Integración con APIs externas"
+    ]
+  }
+]

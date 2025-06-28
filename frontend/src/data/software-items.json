@@ -1,0 +1,506 @@
+[
+  {
+    "id": 1,
+    "title": "GestionPy",
+    "label": "Sistema de gestión",
+    "companyLogo": "/assets/logos/gestionpy.png",
+    "desc": "GestionPy ofrece gestión contable, facturación y reportes en una sola plataforma.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/gestionpy.png",
+    "plans": [
+      { "id": 101, "price": 5900, "description": "Plan básico de contabilidad y facturación" },
+      { "id": 102, "price": 9900, "description": "Plan estándar con reporting avanzado" },
+      { "id": 103, "price": 14900, "description": "Plan premium con soporte 24/7" }
+    ],
+    "demoUrl": "https://youtu.be/demo-gestionpy",
+    "reviews": [
+      "Excelente manejo de inventarios – Cliente A",
+      "Interfaz intuitiva en GestionPy – Cliente B"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=gestionpy@example.com"
+  },
+  {
+    "id": 2,
+    "title": "AdminPro",
+    "label": "Sistema de gestión",
+    "companyLogo": "/assets/logos/adminpro.png",
+    "desc": "AdminPro controla y optimiza tus procesos administrativos desde un único panel.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/adminpro.png",
+    "plans": [
+      { "id": 201, "price": 5900, "description": "Plan básico de administración" },
+      { "id": 202, "price": 9900, "description": "Plan estándar con flujos avanzados" },
+      { "id": 203, "price": 14900, "description": "Plan premium con soporte dedicado" }
+    ],
+    "demoUrl": "https://youtu.be/demo-adminpro",
+    "reviews": [
+      "Menos errores en el workflow – Cliente C",
+      "Muy configurable y fácil de usar – Cliente D"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=adminpro@example.com"
+  },
+  {
+    "id": 7,
+    "title": "OfficePlus",
+    "label": "Sistema de gestión",
+    "companyLogo": "/assets/logos/officeplus.png",
+    "desc": "OfficePlus gestiona recursos de oficina, reservas de salas y suministros de forma centralizada.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/officeplus.png",
+    "plans": [
+      { "id": 701, "price": 5900, "description": "Plan básico de gestión de salas" },
+      { "id": 702, "price": 9900, "description": "Plan estándar con analíticas de uso" },
+      { "id": 703, "price": 14900, "description": "Plan premium con integraciones de calendario" }
+    ],
+    "demoUrl": "https://youtu.be/demo-officeplus",
+    "reviews": [
+      "Reservas simplificadas – Cliente E",
+      "Excelente para startups – Cliente F"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=officeplus@example.com"
+  },
+  {
+    "id": 8,
+    "title": "Gestiona360",
+    "label": "Sistema de gestión",
+    "companyLogo": "/assets/logos/gestiona360.png",
+    "desc": "Gestiona360 ofrece visión completa de tus procesos internos y automatización de tareas.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/gestiona360.png",
+    "plans": [
+      { "id": 801, "price": 5900, "description": "Plan básico de automatización" },
+      { "id": 802, "price": 9900, "description": "Plan estándar con workflows" },
+      { "id": 803, "price": 14900, "description": "Plan premium con integraciones ERP" }
+    ],
+    "demoUrl": "https://youtu.be/demo-gestiona360",
+    "reviews": [
+      "Visión 360° del negocio – Cliente G",
+      "Reducción de tiempos en aprobaciones – Cliente H"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=gestiona360@example.com"
+  },
+  {
+    "id": 3,
+    "title": "ERPCloud",
+    "label": "Sistemas ERP",
+    "companyLogo": "/assets/logos/erpcloud.png",
+    "desc": "ERPCloud es un ERP 100% en la nube, accesible desde cualquier dispositivo sin instalaciones locales.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/erpcloud.png",
+    "plans": [
+      { "id": 301, "price": 5900, "description": "Plan básico en la nube" },
+      { "id": 302, "price": 9900, "description": "Plan estándar con escalabilidad" },
+      { "id": 303, "price": 14900, "description": "Plan premium con SLAs" }
+    ],
+    "demoUrl": "https://youtu.be/demo-erpcloud",
+    "reviews": [
+      "Siempre disponible – Cliente I",
+      "Migración sencilla – Cliente J"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=erpcloud@example.com"
+  },
+  {
+    "id": 4,
+    "title": "MicroERP",
+    "label": "Sistemas ERP",
+    "companyLogo": "/assets/logos/microerp.png",
+    "desc": "MicroERP ofrece módulos ERP ligeros y escalables, ideal para microempresas.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/microerp.png",
+    "plans": [
+      { "id": 401, "price": 5900, "description": "Plan básico para microempresas" },
+      { "id": 402, "price": 9900, "description": "Plan estándar con módulos extra" },
+      { "id": 403, "price": 14900, "description": "Plan premium con soporte prioritario" }
+    ],
+    "demoUrl": "https://youtu.be/demo-microerp",
+    "reviews": [
+      "Ligero y eficaz – Cliente K",
+      "Crece con nosotros – Cliente L"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=microerp@example.com"
+  },
+  {
+    "id": 9,
+    "title": "OpenERPX",
+    "label": "Sistemas ERP",
+    "companyLogo": "/assets/logos/openerpx.png",
+    "desc": "OpenERPX es un ERP open-source, totalmente personalizable y sin coste de licencia.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/openerpx.png",
+    "plans": [
+      { "id": 901, "price": 0,    "description": "Open-source sin licencia" },
+      { "id": 902, "price": 9900, "description": "Soporte comunitario" },
+      { "id": 903, "price": 14900,"description": "Consultoría y formación" }
+    ],
+    "demoUrl": "https://youtu.be/demo-openerpx",
+    "reviews": [
+      "Código abierto y transparente – Cliente M",
+      "Amplia comunidad – Cliente N"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=openerpx@example.com"
+  },
+  {
+    "id": 10,
+    "title": "ProGestion",
+    "label": "Sistemas ERP",
+    "companyLogo": "/assets/logos/progestion.png",
+    "desc": "ProGestion se especializa en manufactura e inventario con trazabilidad en tiempo real.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/progestion.png",
+    "plans": [
+      { "id": 1001, "price": 5900,  "description": "Plan básico de manufactura" },
+      { "id": 1002, "price": 9900,  "description": "Plan estándar con trazabilidad" },
+      { "id": 1003, "price": 14900, "description": "Plan premium con ERP integrations" }
+    ],
+    "demoUrl": "https://youtu.be/demo-progestion",
+    "reviews": [
+      "Trazabilidad impecable – Cliente O",
+      "Ideal para manufactura – Cliente P"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=progestion@example.com"
+  },
+  {
+    "id": 5,
+    "title": "InnovaX",
+    "label": "Innovación",
+    "companyLogo": "/assets/logos/innovax.png",
+    "desc": "InnovaX facilita la innovación abierta y la colaboración en tiempo real.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/innovax.png",
+    "plans": [
+      { "id": 501, "price": 5900, "description": "Plan básico de colaboración" },
+      { "id": 502, "price": 9900, "description": "Plan estándar con IA ligera" },
+      { "id": 503, "price": 14900,"description": "Plan premium con analíticas avanzadas" }
+    ],
+    "demoUrl": "https://youtu.be/demo-innovax",
+    "reviews": [
+      "Colaboración mejorada – Cliente Q",
+      "Innovación al instante – Cliente R"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=innovax@example.com"
+  },
+  {
+    "id": 6,
+    "title": "SmartSuite",
+    "label": "Innovación",
+    "companyLogo": "/assets/logos/smartsuite.png",
+    "desc": "SmartSuite integra IA para optimizar procesos y ofrecer insights en tiempo real.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/smartsuite.png",
+    "plans": [
+      { "id": 601, "price": 5900, "description": "Plan básico con IA ligera" },
+      { "id": 602, "price": 9900, "description": "Plan estándar con módulos de ML" },
+      { "id": 603, "price": 14900,"description": "Plan premium con análisis predictivo" }
+    ],
+    "demoUrl": "https://youtu.be/demo-smartsuite",
+    "reviews": [
+      "Procesos optimizados – Cliente S",
+      "Insights predictivos – Cliente T"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=smartsuite@example.com"
+  },
+  {
+    "id": 11,
+    "title": "TechLab",
+    "label": "Innovación",
+    "companyLogo": "/assets/logos/techlab.png",
+    "desc": "TechLab ofrece un entorno virtual para testear y lanzar nuevas ideas.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/techlab.png",
+    "plans": [
+      { "id": 1101, "price": 5900, "description": "Plan básico de laboratorio virtual" },
+      { "id": 1102, "price": 9900, "description": "Plan estándar con entornos privados" },
+      { "id": 1103, "price": 14900,"description": "Plan premium con clusters dedicados" }
+    ],
+    "demoUrl": "https://youtu.be/demo-techlab",
+    "reviews": [
+      "Entorno fiable – Cliente U",
+      "Lanzamientos ágiles – Cliente V"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=techlab@example.com"
+  },
+  {
+    "id": 12,
+    "title": "IdeaBoost",
+    "label": "Innovación",
+    "companyLogo": "/assets/logos/ideaboost.png",
+    "desc": "IdeaBoost gestiona ideas y feedback para equipos ágiles.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/ideaboost.png",
+    "plans": [
+      { "id": 1201, "price": 5900, "description": "Plan básico de gestión de ideas" },
+      { "id": 1202, "price": 9900, "description": "Plan estándar con votaciones" },
+      { "id": 1203, "price": 14900,"description": "Plan premium con analíticas de feedback" }
+    ],
+    "demoUrl": "https://youtu.be/demo-ideaboost",
+    "reviews": [
+      "Creatividad potenciada – Cliente W",
+      "Feedback estructurado – Cliente X"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=ideaboost@example.com"
+  },
+  {
+    "id": 13,
+    "title": "SalesGo",
+    "label": "CRM y Ventas",
+    "companyLogo": "/assets/logos/salesgo.png",
+    "desc": "SalesGo gestiona tus clientes y embudos de venta de forma sencilla.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/salesgo.png",
+    "plans": [
+      { "id": 1301, "price": 5900, "description": "Plan básico de CRM" },
+      { "id": 1302, "price": 9900, "description": "Plan estándar con automatizaciones" },
+      { "id": 1303, "price": 14900,"description": "Plan premium con analíticas de ventas" }
+    ],
+    "demoUrl": "https://youtu.be/demo-salesgo",
+    "reviews": [
+      "Embudo optimizado – Cliente Y",
+      "Retención de clientes mejorada – Cliente Z"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=salesgo@example.com"
+  },
+  {
+    "id": 14,
+    "title": "Clientify",
+    "label": "CRM y Ventas",
+    "companyLogo": "/assets/logos/clientify.png",
+    "desc": "Clientify automatiza el seguimiento y retención de clientes.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/clientify.png",
+    "plans": [
+      { "id": 1401, "price": 5900, "description": "Plan básico de seguimiento" },
+      { "id": 1402, "price": 9900, "description": "Plan estándar con notificaciones" },
+      { "id": 1403, "price": 14900,"description": "Plan premium con segmentación avanzada" }
+    ],
+    "demoUrl": "https://youtu.be/demo-clientify",
+    "reviews": [
+      "Seguimiento automático – Cliente AA",
+      "Mejor retención – Cliente BB"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=clientify@example.com"
+  },
+  {
+    "id": 15,
+    "title": "LeadPro",
+    "label": "CRM y Ventas",
+    "companyLogo": "/assets/logos/leadpro.png",
+    "desc": "LeadPro optimiza la captación y conversión de leads en ventas.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/leadpro.png",
+    "plans": [
+      { "id": 1501, "price": 5900, "description": "Plan básico de captación" },
+      { "id": 1502, "price": 9900, "description": "Plan estándar con scoring de leads" },
+      { "id": 1503, "price": 14900,"description": "Plan premium con automatización avanzada" }
+    ],
+    "demoUrl": "https://youtu.be/demo-leadpro",
+    "reviews": [
+      "Más leads calificados – Cliente CC",
+      "Conversión mejorada – Cliente DD"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=leadpro@example.com"
+  },
+  {
+    "id": 16,
+    "title": "TalentManager",
+    "label": "Recursos Humanos",
+    "companyLogo": "/assets/logos/talentmanager.png",
+    "desc": "TalentManager gestiona talento, reclutamiento y evaluaciones de tu equipo.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/talentmanager.png",
+    "plans": [
+      { "id": 1601, "price": 5900, "description": "Plan básico de reclutamiento" },
+      { "id": 1602, "price": 9900, "description": "Plan estándar con evaluaciones" },
+      { "id": 1603, "price": 14900,"description": "Plan premium con análisis de desempeño" }
+    ],
+    "demoUrl": "https://youtu.be/demo-talentmanager",
+    "reviews": [
+      "Contrataciones más rápidas – Cliente EE",
+      "Evaluaciones objetivas – Cliente FF"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=talentmanager@example.com"
+  },
+  {
+    "id": 17,
+    "title": "NominaPlus",
+    "label": "Recursos Humanos",
+    "companyLogo": "/assets/logos/nominaplus.png",
+    "desc": "NominaPlus automatiza el cálculo de nómina y beneficios para tu equipo.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/nominaplus.png",
+    "plans": [
+      { "id": 1701, "price": 5900, "description": "Plan básico de nómina" },
+      { "id": 1702, "price": 9900, "description": "Plan estándar con beneficios" },
+      { "id": 1703, "price": 14900,"description": "Plan premium con informes avanzados" }
+    ],
+    "demoUrl": "https://youtu.be/demo-nominaplus",
+    "reviews": [
+      "Cálculo preciso – Cliente GG",
+      "Gestión de beneficios sencilla – Cliente HH"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=nominaplus@example.com"
+  },
+  {
+    "id": 18,
+    "title": "HRFlow",
+    "label": "Recursos Humanos",
+    "companyLogo": "/assets/logos/hrflow.png",
+    "desc": "HRFlow gestiona flujos de aprobación y control de asistencia digitalmente.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/hrflow.png",
+    "plans": [
+      { "id": 1801, "price": 5900, "description": "Plan básico de asistencia" },
+      { "id": 1802, "price": 9900, "description": "Plan estándar con flujos de aprobación" },
+      { "id": 1803, "price": 14900,"description": "Plan premium con notificaciones automáticas" }
+    ],
+    "demoUrl": "https://youtu.be/demo-hrflow",
+    "reviews": [
+      "Asistencia bajo control – Cliente II",
+      "Aprobaciones ágiles – Cliente JJ"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=hrflow@example.com"
+  },
+  {
+    "id": 19,
+    "title": "Logistix",
+    "label": "Operaciones",
+    "companyLogo": "/assets/logos/logistix.png",
+    "desc": "Logistix gestiona tu logística y cadena de suministro con alertas en tiempo real.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/logistix.png",
+    "plans": [
+      { "id": 1901, "price": 5900, "description": "Plan básico de logística" },
+      { "id": 1902, "price": 9900, "description": "Plan estándar con alertas" },
+      { "id": 1903, "price": 14900,"description": "Plan premium con análisis de cadena de suministro" }
+    ],
+    "demoUrl": "https://youtu.be/demo-logistix",
+    "reviews": [
+      "Cadena optimizada – Cliente KK",
+      "Alertas oportunas – Cliente LL"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=logistix@example.com"
+  },
+  {
+    "id": 20,
+    "title": "ProdTrack",
+    "label": "Operaciones",
+    "companyLogo": "/assets/logos/prodtrack.png",
+    "desc": "ProdTrack hace seguimiento de producción en tiempo real y envía alertas inteligentes.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/prodtrack.png",
+    "plans": [
+      { "id": 2001, "price": 5900, "description": "Plan básico de seguimiento" },
+      { "id": 2002, "price": 9900, "description": "Plan estándar con alarmas" },
+      { "id": 2003, "price": 14900,"description": "Plan premium con dashboards avanzados" }
+    ],
+    "demoUrl": "https://youtu.be/demo-prodtrack",
+    "reviews": [
+      "Producción bajo control – Cliente MM",
+      "Alertas inteligentes – Cliente NN"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=prodtrack@example.com"
+  },
+  {
+    "id": 21,
+    "title": "AlmacenPro",
+    "label": "Operaciones",
+    "companyLogo": "/assets/logos/almacenpro.png",
+    "desc": "AlmacenPro automatiza la gestión de bodegas e inventario de forma avanzada.",
+    "icons": [
+      "/assets/python.png",
+      "/assets/react.png",
+      "/assets/digitalocean.png"
+    ],
+    "illustration": "/assets/illus/almacenpro.png",
+    "plans": [
+      { "id": 2101, "price": 5900, "description": "Plan básico de inventario" },
+      { "id": 2102, "price": 9900, "description": "Plan estándar con control de lotes" },
+      { "id": 2103, "price": 14900,"description": "Plan premium con auditoría completa" }
+    ],
+    "demoUrl": "https://youtu.be/demo-almacenpro",
+    "reviews": [
+      "Inventario optimizado – Cliente OO",
+      "Gestión sin errores – Cliente PP"
+    ],
+    "calendarUrl": "https://calendar.google.com/calendar/embed?src=almacenpro@example.com"
+  }
+]

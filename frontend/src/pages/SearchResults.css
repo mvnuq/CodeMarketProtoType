@@ -1,0 +1,66 @@
+:root {
+  --card-bg: #2e1a6b;
+  --card-hover: #3a237e;
+}
+
+.search-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-light);
+}
+
+.search-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.no-results {
+  font-size: 1.1rem;
+  color: var(--text-lighter);
+}
+
+.results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result-card {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.result-card:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+.result-card a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+}
+
+.result-logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.result-info h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem;
+}
+
+.result-info p {
+  margin: 0;
+  color: var(--text-lighter);
+  font-size: 0.95rem;
+}

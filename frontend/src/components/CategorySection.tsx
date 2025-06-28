@@ -1,36 +1,40 @@
-// src/components/CategorySection.tsx
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 import './CategorySection.css';
+import { useNavigate } from 'react-router-dom';
 
-export type CatItem = { id: number; name: string; icon: string };
-export type CatSection = { title: string; items: CatItem[] };
+export type CatItem = {
+  id: number;
+  name: string;
+  icon: string;
+  description: string;
+};
+
+export type CatSection = {
+  title: string;
+  items: CatItem[];
+};
 
 type Props = { section: CatSection };
 
 export default function CategorySection({ section }: Props) {
   const navigate = useNavigate();
 
-  const goDetail = (item: CatItem) => {
-    navigate(`/software/${item.id}`, { state: { item } });
-  };
-
   return (
-    <section className="cm-cat">
+    <section className="category-section">
       <h2>{section.title}</h2>
-      <div className="cm-cat-grid">
-        {section.items.map(item => (
-          <motion.div
+      <div className="category-grid">
+        {section.items.map((item) => (
+          <div
             key={item.id}
-            className="cm-cat-item"
-            whileHover={{ y: -5, backgroundColor: '#6A37A1' }}
-            transition={{ type: 'spring', stiffness: 300 }}
-            onClick={() => goDetail(item)}                // <-- aquí
+            className="software-card"
+            onClick={() => navigate(`/software/${item.id}`, { state: { item } })}
           >
-            <img src={item.icon} alt={item.name} />
-            <span>{item.name}</span>
-          </motion.div>
+            <img className="software-image" src={item.icon} alt={item.name} />
+            <div className="software-info">
+              <h3 className="software-title">{item.name}</h3>
+              <p className="software-desc">{item.description}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>

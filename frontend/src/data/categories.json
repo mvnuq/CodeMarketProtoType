@@ -2,22 +2,157 @@
   {
     "title": "Sistema de gestión",
     "items": [
-      { "id": 1, "name": "GestionPy", "icon": "/assets/erp.png" },
-      { "id": 2, "name": "AdminPro",  "icon": "/assets/erp.png" }
+      {
+        "id": 1,
+        "name": "GestionPy",
+        "icon": "/assets/erp.png",
+        "description": "Gestión contable, facturación y reportes en una sola plataforma."
+      },
+      {
+        "id": 2,
+        "name": "AdminPro",
+        "icon": "/assets/erp.png",
+        "description": "Control administrativo y flujos de trabajo optimizados para tu empresa."
+      },
+      {
+        "id": 7,
+        "name": "OfficePlus",
+        "icon": "/assets/erp.png",
+        "description": "Gestión integral de oficinas para pymes y startups."
+      },
+      {
+        "id": 8,
+        "name": "Gestiona360",
+        "icon": "/assets/erp.png",
+        "description": "Automatiza procesos internos y mantén todo bajo control."
+      }
     ]
   },
   {
     "title": "Sistemas ERP",
     "items": [
-      { "id": 3, "name": "ERPCloud", "icon": "/assets/erp.png" },
-      { "id": 4, "name": "MicroERP",  "icon": "/assets/erp.png" }
+      {
+        "id": 3,
+        "name": "ERPCloud",
+        "icon": "/assets/erp.png",
+        "description": "ERP 100% en la nube: accesible desde cualquier dispositivo."
+      },
+      {
+        "id": 4,
+        "name": "MicroERP",
+        "icon": "/assets/erp.png",
+        "description": "Solución ligera para microempresas con módulos escalables."
+      },
+      {
+        "id": 9,
+        "name": "OpenERPX",
+        "icon": "/assets/erp.png",
+        "description": "Plataforma ERP open-source y totalmente personalizable."
+      },
+      {
+        "id": 10,
+        "name": "ProGestion",
+        "icon": "/assets/erp.png",
+        "description": "Enfocado en manufactura y gestión de inventarios avanzada."
+      }
     ]
   },
   {
     "title": "Innovación",
     "items": [
-      { "id": 5, "name": "InnovaX",   "icon": "/assets/innov.png" },
-      { "id": 6, "name": "SmartSuite","icon": "/assets/innov.png" }
+      {
+        "id": 5,
+        "name": "InnovaX",
+        "icon": "/assets/innov.png",
+        "description": "Herramientas de innovación abierta y colaboración en tiempo real."
+      },
+      {
+        "id": 6,
+        "name": "SmartSuite",
+        "icon": "/assets/innov.png",
+        "description": "Suite inteligente con IA para optimizar tus procesos."
+      },
+      {
+        "id": 11,
+        "name": "TechLab",
+        "icon": "/assets/innov.png",
+        "description": "Laboratorio virtual para testear y lanzar nuevas ideas."
+      },
+      {
+        "id": 12,
+        "name": "IdeaBoost",
+        "icon": "/assets/innov.png",
+        "description": "Plataforma de gestión de ideas para equipos ágiles."
+      }
+    ]
+  },
+  {
+    "title": "CRM y Ventas",
+    "items": [
+      {
+        "id": 13,
+        "name": "SalesGo",
+        "icon": "/assets/crm.png",
+        "description": "CRM fácil de usar con gestión de clientes y embudos de ventas."
+      },
+      {
+        "id": 14,
+        "name": "Clientify",
+        "icon": "/assets/crm.png",
+        "description": "Automatiza el seguimiento y retención de clientes."
+      },
+      {
+        "id": 15,
+        "name": "LeadPro",
+        "icon": "/assets/crm.png",
+        "description": "Optimiza la captación y conversión de leads en ventas."
+      }
+    ]
+  },
+  {
+    "title": "Recursos Humanos",
+    "items": [
+      {
+        "id": 16,
+        "name": "TalentManager",
+        "icon": "/assets/rh.png",
+        "description": "Gestión de talento, reclutamiento y evaluaciones."
+      },
+      {
+        "id": 17,
+        "name": "NominaPlus",
+        "icon": "/assets/rh.png",
+        "description": "Cálculo automático de nómina y beneficios para tu equipo."
+      },
+      {
+        "id": 18,
+        "name": "HRFlow",
+        "icon": "/assets/rh.png",
+        "description": "Flujos de aprobación y control de asistencia digital."
+      }
+    ]
+  },
+  {
+    "title": "Operaciones",
+    "items": [
+      {
+        "id": 19,
+        "name": "Logistix",
+        "icon": "/assets/op.png",
+        "description": "Gestiona tu logística y controla tu cadena de suministro."
+      },
+      {
+        "id": 20,
+        "name": "ProdTrack",
+        "icon": "/assets/op.png",
+        "description": "Seguimiento de producción en tiempo real y alertas inteligentes."
+      },
+      {
+        "id": 21,
+        "name": "AlmacenPro",
+        "icon": "/assets/op.png",
+        "description": "Gestión avanzada de bodegas e inventario automatizado."
+      }
     ]
   }
 ]
