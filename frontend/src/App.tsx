@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  HashRouter,
   Routes,
   Route,
   Navigate,
@@ -27,8 +26,14 @@ function AnimatedRoutes() {
         <Route path="/home" element={<Home />} />
         <Route path="/setup" element={<Setup />} />
         <Route path="/setup-dev" element={<SetupDev />} />
-        <Route path="/suggestions-software" element={<SuggestionsSoftware />} />
-        <Route path="/suggestions-clients" element={<SuggestionsClients />} />
+        <Route
+          path="/suggestions-software"
+          element={<SuggestionsSoftware />}
+        />
+        <Route
+          path="/suggestions-clients"
+          element={<SuggestionsClients />}
+        />
         <Route path="/software/:id" element={<SoftwareDetail />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="*" element={<Navigate to="/" replace />} />
@@ -39,10 +44,8 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <HashRouter>
-      <AuthProvider>
-        <AnimatedRoutes />
-      </AuthProvider>
-    </HashRouter>
+    <AuthProvider>
+      <AnimatedRoutes />
+    </AuthProvider>
   );
 }
