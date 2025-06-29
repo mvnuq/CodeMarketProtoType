@@ -1,0 +1,39 @@
+.publish-content {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-light);
+}
+.publish-content h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.publish-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.publish-step input,
+.publish-step textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--input-bg);
+  color: var(--text-light);
+}
+.publish-step button {
+  align-self: flex-end;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 0.5rem;
+  color: #1a0b36;
+  cursor: pointer;
+}
+.publish-review {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-height: 200px;
+  overflow: auto;
+}

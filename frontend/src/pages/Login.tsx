@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import users from '../data/users.json';
+
+type User = { email: string; password: string; role: 'dev' | 'user' };
 
 export default function Login() {
   const navigate = useNavigate();
@@ -11,10 +14,13 @@ export default function Login() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !pass) {
-      setError('Por favor completa ambos campos');
+    const found = (users as User[]).find(u => u.email === email && u.password === pass);
+    if (!found) {
+      setError('Email o contraseña incorrectos');
       return;
     }
+    // Guardamos en localStorage (o tu contexto real)
+    localStorage.setItem('cm_user', JSON.stringify({ email: found.email, role: found.role }));
     setError('');
     navigate('/home');
   };

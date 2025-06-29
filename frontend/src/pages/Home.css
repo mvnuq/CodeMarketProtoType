@@ -154,3 +154,84 @@
 .btn-primary:hover {
   filter: brightness(1.1);
 }
+
+
+
+/* ========================
+   BANNERS PRINCIPALES
+   ======================== */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.banner-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Banner software (emprendedores) */
+.banner--software {
+  background: linear-gradient(135deg, #352E8C 0%, #201B4F 100%);
+}
+.banner--software .banner-title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: var(--text-light);
+  line-height: 1.1;
+}
+.banner--software .banner-title span {
+  color: var(--purple-light);
+}
+.banner--software .banner-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2.5rem;
+  background: var(--gradient-btn);
+  color: var(--bg-dark);
+}
+
+/* Banner dev (desarrolladores) */
+.banner--dev {
+  background: linear-gradient(135deg, #201B4F 0%, #352E8C 100%);
+}
+.banner--dev .banner-title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: #ffe38a;
+  line-height: 1.1;
+}
+.banner--dev .banner-title span {
+  color: #ff5a5f;
+}
+.banner--dev .banner-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2.5rem;
+  background: linear-gradient(90deg, #7b3ec9, #5e23a4);
+  color: #fff;
+}
+
+/* Botones comunes */
+.banner-btn {
+  border: none;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.banner-btn:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transform: translateY(-2px);
+}
+
+/* Oculta los estilos anteriores de home-content y hero */
+.hero,
+.home-content,
+.home-title,
+.home-choices,
+.choice-card {
+  display: none !important;
+}

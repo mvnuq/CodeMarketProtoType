@@ -1,0 +1,12 @@
+[
+  {
+    "email": "dev@codemarket.com",
+    "password": "dev1234",
+    "role": "dev"
+  },
+  {
+    "email": "user@codemarket.com",
+    "password": "user1234",
+    "role": "user"
+  }
+]

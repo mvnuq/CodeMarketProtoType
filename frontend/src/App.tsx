@@ -15,6 +15,7 @@ import SuggestionsSoftware from './pages/SuggestionsSoftware';
 import SuggestionsClients from './pages/SuggestionsClients';
 import SoftwareDetail from './pages/SoftwareDetail';
 import SearchResults from './pages/SearchResults';
+import PublishSoftware from './pages/PublishSoftware';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -37,6 +38,8 @@ function AnimatedRoutes() {
         <Route path="/software/:id" element={<SoftwareDetail />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/publish-software" element={<PublishSoftware />} />
+     
       </Routes>
     </AnimatePresence>
   );

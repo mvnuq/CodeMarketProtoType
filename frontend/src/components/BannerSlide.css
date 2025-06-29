@@ -1,0 +1,80 @@
+/* src/components/BannerCarousel.css */
+.carousel-wrapper {
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+  position: relative;
+}
+
+/* override Swiper arrows color */
+.carousel-wrapper .swiper-button-next,
+.carousel-wrapper .swiper-button-prev {
+  color: #fff;
+}
+
+/* override Swiper pagination bullets */
+.carousel-wrapper .swiper-pagination-bullet {
+  background: rgba(255,255,255,0.6);
+  opacity: 1;
+}
+.carousel-wrapper .swiper-pagination-bullet-active {
+  background: #9f5ae0;
+}
+
+/* Banner base */
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Inner padding */
+.banner-inner {
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+/* Variantes de fondo */
+.banner--software {
+  background: linear-gradient(135deg, #352E8C, #201B4F);
+}
+.banner--dev {
+  background: linear-gradient(135deg, #201B4F, #352E8C);
+}
+
+/* Títulos */
+.banner-title {
+  font-size: clamp(2.5rem,8vw,4rem);
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.banner--software .banner-title span { color: #9f5ae0; }
+.banner--dev .banner-title span      { color: #ff5a5f; }
+
+/* Botones */
+.banner-btn {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.banner-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+.banner--software .banner-btn {
+  background: var(--gradient-btn);
+  color: var(--bg-dark);
+}
+.banner--dev .banner-btn {
+  background: linear-gradient(90deg, #7b3ec9, #5e23a4);
+  color: #fff;
+}

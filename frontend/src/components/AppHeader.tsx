@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate, createSearchParams } from 'react-router-dom';
 import './AppHeader.css';
+import { useAuth } from '../auth/useAuth';
 
 export default function AppHeader() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
-
+  const { user } = useAuth();
+  const nav = useNavigate();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
@@ -34,6 +36,13 @@ export default function AppHeader() {
             <img src="/assets/icons/search.png" alt="" className="cm-icon cm-icon--search" />
           </button>
         </form>
+
+          <button
+            className="cm-publish-btn"
+            onClick={() => navigate('/publish-software')}
+          >
+            📤 Publicar software
+          </button>
 
         <button className="cm-user" aria-label="Perfil de usuario">
           <img src="/assets/icons/user.png" alt="" className="cm-icon cm-icon--user" />

@@ -101,3 +101,18 @@
   width: 1.4rem;
   height: 1.4rem;
 }
+.cm-publish-btn {
+  margin-left: auto;
+  background: var(--accent);
+  color: #1a0b36;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.cm-publish-btn:hover {
+  background: #8c47cc;
+  transform: translateY(-1px);
+}
