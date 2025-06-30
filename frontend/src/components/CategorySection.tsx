@@ -29,7 +29,7 @@ export default function CategorySection({ section }: Props) {
             className="software-card"
             onClick={() => navigate(`/software/${item.id}`, { state: { item } })}
           >
-            <img className="software-image" src={item.icon} alt={item.name} />
+            <img className="software-illustration" src={item.icon} alt={item.name} />
             <div className="software-info">
               <h3 className="software-title">{item.name}</h3>
               <p className="software-desc">{item.description}</p>

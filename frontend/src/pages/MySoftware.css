@@ -1,0 +1,51 @@
+/* src/pages/MySoftware.css */
+.mysoft-content { max-width:900px; margin:2rem auto; padding:0 1rem; }
+.mysoft-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;
+}
+.mysoft-card {
+  background: var(--purple);
+  border-radius:1rem;
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+.mysoft-card img {
+  width:100%; height:160px; object-fit:cover;
+}
+.mysoft-info { padding:1rem; flex:1; display:flex; flex-direction:column; }
+.mysoft-info h2 { margin:0 0 .5rem; color:var(--text-light); }
+.mysoft-info p { flex:1; color:var(--text-lighter); font-size:.9rem; }
+
+/* Reseña ya guardada */
+.mysoft-user-review { margin-bottom: .75rem; }
+.mysoft-user-review .stars { color:#FFD700; }
+.mysoft-user-review .user-comment { color:#fff; font-style:italic; }
+
+/* Botones */
+.btn-secondary, .btn-primary {
+  border:none; padding:.6rem; border-radius:999px; cursor:pointer;
+}
+.btn-secondary { background: rgba(255,255,255,0.1); color:#fff; }
+.btn-primary   { background: var(--gradient-btn); color: var(--bg-dark); }
+
+/* Formulario inline */
+.review-form-inline {
+  background: rgba(0,0,0,0.2);
+  padding:1rem; border-radius:.75rem; margin-top:1rem;
+  display:flex; flex-direction:column; gap:.5rem;
+}
+.review-form-inline .stars {
+  font-size:1.5rem; color: rgba(255,255,255,0.3);
+}
+.review-form-inline .star.filled { color: #FFD700; cursor:pointer; }
+.review-form-inline textarea {
+  width:100%; min-height:5rem; border-radius:.5rem;
+  border:none; padding:.5rem; resize:vertical;
+}
+.review-actions {
+  display:flex; justify-content:flex-end; gap:.5rem;
+}

@@ -16,6 +16,11 @@ import SuggestionsClients from './pages/SuggestionsClients';
 import SoftwareDetail from './pages/SoftwareDetail';
 import SearchResults from './pages/SearchResults';
 import PublishSoftware from './pages/PublishSoftware';
+import PaymentSimulation from './pages/PaymentSimulation';
+import PaymentSuccess from './pages/PaymentSuccess';
+import MySoftware from './pages/MySoftware';
+import SignupPage from './pages/SignupPage';
+import ModerationPage from './pages/ModerationPage';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -39,7 +44,11 @@ function AnimatedRoutes() {
         <Route path="/search" element={<SearchResults />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/publish-software" element={<PublishSoftware />} />
-     
+        <Route path="/software/:id/pay/:planId" element={<PaymentSimulation />} />
+         <Route path="/my-software" element={<MySoftware />} />
+        <Route path="/software/:id/success"     element={<PaymentSuccess />} />
+      <Route path="/signup" element={<SignupPage />} />
+      <Route path="/admin/moderation" element={<ModerationPage />} />
       </Routes>
     </AnimatePresence>
   );

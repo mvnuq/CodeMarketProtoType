@@ -1,0 +1,102 @@
+/* src/pages/ModerationPage.css */
+
+/* Layout principal */
+.mod-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-light);
+}
+.mod-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Mensaje vacío */
+.mod-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-lighter);
+}
+
+/* Grid de tarjetas */
+.mod-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Tarjeta */
+.mod-card {
+  background: linear-gradient(135deg, #4A2F8C 0%, #362065 100%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.mod-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Encabezado de la tarjeta */
+.mod-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mod-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.mod-id {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ddd;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Descripción */
+.mod-desc {
+  flex: 1;
+  margin: 1rem 0;
+  color: #e0d6f7;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Botones */
+.mod-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+.btn-approve,
+.btn-reject {
+  flex: 1;
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.btn-approve {
+  background: #57C45E;
+  color: #1b1b1b;
+}
+.btn-approve:hover {
+  filter: brightness(1.1);
+}
+.btn-reject {
+  background: #E05241;
+  color: #fff;
+}
+.btn-reject:hover {
+  filter: brightness(1.1);
+}

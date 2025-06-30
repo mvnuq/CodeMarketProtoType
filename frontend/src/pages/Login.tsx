@@ -69,6 +69,13 @@ export default function Login() {
         <button type="submit" className="login-btn">
           Iniciar sesión
         </button>
+                <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={() => navigate('/register')}
+        >
+          Crear cuenta
+        </button>
       </form>
     </div>
   );

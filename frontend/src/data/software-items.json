@@ -10,7 +10,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/gestionpy.png",
+    "icon": "/assets/illus/gestionpy.png",
     "plans": [
       { "id": 101, "price": 5900, "description": "Plan básico de contabilidad y facturación" },
       { "id": 102, "price": 9900, "description": "Plan estándar con reporting avanzado" },
@@ -18,8 +18,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-gestionpy",
     "reviews": [
-      "Excelente manejo de inventarios – Cliente A",
-      "Interfaz intuitiva en GestionPy – Cliente B"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=gestionpy@example.com"
   },
@@ -34,7 +34,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/adminpro.png",
+    "icon": "/assets/illus/adminpro.png",
     "plans": [
       { "id": 201, "price": 5900, "description": "Plan básico de administración" },
       { "id": 202, "price": 9900, "description": "Plan estándar con flujos avanzados" },
@@ -42,8 +42,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-adminpro",
     "reviews": [
-      "Menos errores en el workflow – Cliente C",
-      "Muy configurable y fácil de usar – Cliente D"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=adminpro@example.com"
   },
@@ -58,7 +58,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/officeplus.png",
+    "icon": "/assets/illus/officeplus.png",
     "plans": [
       { "id": 701, "price": 5900, "description": "Plan básico de gestión de salas" },
       { "id": 702, "price": 9900, "description": "Plan estándar con analíticas de uso" },
@@ -66,8 +66,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-officeplus",
     "reviews": [
-      "Reservas simplificadas – Cliente E",
-      "Excelente para startups – Cliente F"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=officeplus@example.com"
   },
@@ -82,7 +82,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/gestiona360.png",
+    "icon": "/assets/illus/gestiona360.png",
     "plans": [
       { "id": 801, "price": 5900, "description": "Plan básico de automatización" },
       { "id": 802, "price": 9900, "description": "Plan estándar con workflows" },
@@ -90,8 +90,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-gestiona360",
     "reviews": [
-      "Visión 360° del negocio – Cliente G",
-      "Reducción de tiempos en aprobaciones – Cliente H"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=gestiona360@example.com"
   },
@@ -106,7 +106,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/erpcloud.png",
+    "icon": "/assets/illus/erpcloud.png",
     "plans": [
       { "id": 301, "price": 5900, "description": "Plan básico en la nube" },
       { "id": 302, "price": 9900, "description": "Plan estándar con escalabilidad" },
@@ -114,8 +114,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-erpcloud",
     "reviews": [
-      "Siempre disponible – Cliente I",
-      "Migración sencilla – Cliente J"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=erpcloud@example.com"
   },
@@ -130,7 +130,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/microerp.png",
+    "icon": "/assets/illus/microerp.png",
     "plans": [
       { "id": 401, "price": 5900, "description": "Plan básico para microempresas" },
       { "id": 402, "price": 9900, "description": "Plan estándar con módulos extra" },
@@ -138,8 +138,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-microerp",
     "reviews": [
-      "Ligero y eficaz – Cliente K",
-      "Crece con nosotros – Cliente L"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=microerp@example.com"
   },
@@ -154,7 +154,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/openerpx.png",
+    "icon": "/assets/illus/openerpx.png",
     "plans": [
       { "id": 901, "price": 0,    "description": "Open-source sin licencia" },
       { "id": 902, "price": 9900, "description": "Soporte comunitario" },
@@ -162,8 +162,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-openerpx",
     "reviews": [
-      "Código abierto y transparente – Cliente M",
-      "Amplia comunidad – Cliente N"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=openerpx@example.com"
   },
@@ -178,7 +178,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/progestion.png",
+    "icon": "/assets/illus/progestion.png",
     "plans": [
       { "id": 1001, "price": 5900,  "description": "Plan básico de manufactura" },
       { "id": 1002, "price": 9900,  "description": "Plan estándar con trazabilidad" },
@@ -186,8 +186,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-progestion",
     "reviews": [
-      "Trazabilidad impecable – Cliente O",
-      "Ideal para manufactura – Cliente P"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=progestion@example.com"
   },
@@ -202,7 +202,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/innovax.png",
+    "icon": "/assets/illus/innovax.png",
     "plans": [
       { "id": 501, "price": 5900, "description": "Plan básico de colaboración" },
       { "id": 502, "price": 9900, "description": "Plan estándar con IA ligera" },
@@ -210,8 +210,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-innovax",
     "reviews": [
-      "Colaboración mejorada – Cliente Q",
-      "Innovación al instante – Cliente R"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=innovax@example.com"
   },
@@ -226,7 +226,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/smartsuite.png",
+    "icon": "/assets/illus/smartsuite.png",
     "plans": [
       { "id": 601, "price": 5900, "description": "Plan básico con IA ligera" },
       { "id": 602, "price": 9900, "description": "Plan estándar con módulos de ML" },
@@ -234,8 +234,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-smartsuite",
     "reviews": [
-      "Procesos optimizados – Cliente S",
-      "Insights predictivos – Cliente T"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=smartsuite@example.com"
   },
@@ -250,7 +250,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/techlab.png",
+    "icon": "/assets/illus/techlab.png",
     "plans": [
       { "id": 1101, "price": 5900, "description": "Plan básico de laboratorio virtual" },
       { "id": 1102, "price": 9900, "description": "Plan estándar con entornos privados" },
@@ -258,8 +258,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-techlab",
     "reviews": [
-      "Entorno fiable – Cliente U",
-      "Lanzamientos ágiles – Cliente V"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=techlab@example.com"
   },
@@ -274,7 +274,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/ideaboost.png",
+    "icon": "/assets/illus/ideaboost.png",
     "plans": [
       { "id": 1201, "price": 5900, "description": "Plan básico de gestión de ideas" },
       { "id": 1202, "price": 9900, "description": "Plan estándar con votaciones" },
@@ -282,8 +282,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-ideaboost",
     "reviews": [
-      "Creatividad potenciada – Cliente W",
-      "Feedback estructurado – Cliente X"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=ideaboost@example.com"
   },
@@ -298,7 +298,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/salesgo.png",
+    "icon": "/assets/illus/salesgo.png",
     "plans": [
       { "id": 1301, "price": 5900, "description": "Plan básico de CRM" },
       { "id": 1302, "price": 9900, "description": "Plan estándar con automatizaciones" },
@@ -306,8 +306,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-salesgo",
     "reviews": [
-      "Embudo optimizado – Cliente Y",
-      "Retención de clientes mejorada – Cliente Z"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=salesgo@example.com"
   },
@@ -322,7 +322,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/clientify.png",
+    "icon": "/assets/illus/clientify.png",
     "plans": [
       { "id": 1401, "price": 5900, "description": "Plan básico de seguimiento" },
       { "id": 1402, "price": 9900, "description": "Plan estándar con notificaciones" },
@@ -330,8 +330,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-clientify",
     "reviews": [
-      "Seguimiento automático – Cliente AA",
-      "Mejor retención – Cliente BB"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=clientify@example.com"
   },
@@ -346,7 +346,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/leadpro.png",
+    "icon": "/assets/illus/leadpro.png",
     "plans": [
       { "id": 1501, "price": 5900, "description": "Plan básico de captación" },
       { "id": 1502, "price": 9900, "description": "Plan estándar con scoring de leads" },
@@ -354,8 +354,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-leadpro",
     "reviews": [
-      "Más leads calificados – Cliente CC",
-      "Conversión mejorada – Cliente DD"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=leadpro@example.com"
   },
@@ -370,7 +370,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/talentmanager.png",
+    "icon": "/assets/illus/talentmanager.png",
     "plans": [
       { "id": 1601, "price": 5900, "description": "Plan básico de reclutamiento" },
       { "id": 1602, "price": 9900, "description": "Plan estándar con evaluaciones" },
@@ -378,8 +378,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-talentmanager",
     "reviews": [
-      "Contrataciones más rápidas – Cliente EE",
-      "Evaluaciones objetivas – Cliente FF"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=talentmanager@example.com"
   },
@@ -394,7 +394,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/nominaplus.png",
+    "icon": "/assets/illus/nominaplus.png",
     "plans": [
       { "id": 1701, "price": 5900, "description": "Plan básico de nómina" },
       { "id": 1702, "price": 9900, "description": "Plan estándar con beneficios" },
@@ -402,8 +402,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-nominaplus",
     "reviews": [
-      "Cálculo preciso – Cliente GG",
-      "Gestión de beneficios sencilla – Cliente HH"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=nominaplus@example.com"
   },
@@ -418,7 +418,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/hrflow.png",
+    "icon": "/assets/illus/hrflow.png",
     "plans": [
       { "id": 1801, "price": 5900, "description": "Plan básico de asistencia" },
       { "id": 1802, "price": 9900, "description": "Plan estándar con flujos de aprobación" },
@@ -426,8 +426,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-hrflow",
     "reviews": [
-      "Asistencia bajo control – Cliente II",
-      "Aprobaciones ágiles – Cliente JJ"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=hrflow@example.com"
   },
@@ -442,7 +442,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/logistix.png",
+    "icon": "/assets/illus/logistix.png",
     "plans": [
       { "id": 1901, "price": 5900, "description": "Plan básico de logística" },
       { "id": 1902, "price": 9900, "description": "Plan estándar con alertas" },
@@ -450,8 +450,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-logistix",
     "reviews": [
-      "Cadena optimizada – Cliente KK",
-      "Alertas oportunas – Cliente LL"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=logistix@example.com"
   },
@@ -466,7 +466,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/prodtrack.png",
+    "icon": "/assets/illus/prodtrack.png",
     "plans": [
       { "id": 2001, "price": 5900, "description": "Plan básico de seguimiento" },
       { "id": 2002, "price": 9900, "description": "Plan estándar con alarmas" },
@@ -474,8 +474,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-prodtrack",
     "reviews": [
-      "Producción bajo control – Cliente MM",
-      "Alertas inteligentes – Cliente NN"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=prodtrack@example.com"
   },
@@ -490,7 +490,7 @@
       "/assets/react.png",
       "/assets/digitalocean.png"
     ],
-    "illustration": "/assets/illus/almacenpro.png",
+    "icon": "/assets/illus/almacenpro.png",
     "plans": [
       { "id": 2101, "price": 5900, "description": "Plan básico de inventario" },
       { "id": 2102, "price": 9900, "description": "Plan estándar con control de lotes" },
@@ -498,8 +498,8 @@
     ],
     "demoUrl": "https://youtu.be/demo-almacenpro",
     "reviews": [
-      "Inventario optimizado – Cliente OO",
-      "Gestión sin errores – Cliente PP"
+      { "rating": 5, "text": "Excelente manejo de inventarios – Cliente A" },
+      { "rating": 4, "text": "Migración sencilla – Cliente B" }
     ],
     "calendarUrl": "https://calendar.google.com/calendar/embed?src=almacenpro@example.com"
   }
